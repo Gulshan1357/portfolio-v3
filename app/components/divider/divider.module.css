@@ -1,0 +1,82 @@
+@layer components {
+  .divider {
+    position: relative;
+    width: var(--lineWidth);
+    height: var(--lineHeight);
+    box-shadow:-10px 0px 40px 4px var(--glow);
+  }
+
+  .line {
+    width: 100%;
+    height: 100%;
+    background: var(--glow);
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: var(--durationL);
+    transition-timing-function: var(--bezierFastoutSlowin);
+    transition-delay: var(--collapseDelay);
+    transform-origin: left center;
+    transform: scaleX(1);
+    
+
+    @media (--mediaUseMotion) {
+      transition-property: transform, opacity;
+    }
+
+    &[data-collapsed='true'] {
+      opacity: 0;
+      transform: scaleX(0);
+    }
+  }
+
+  .upnotch {
+    background: var(--glow);
+    position: absolute;
+    transition-property: opacity;
+    transition-duration: var(--durationL);
+    transition-timing-function: var(--bezierFastoutSlowin);
+    transition-delay: var(--collapseDelay);
+    opacity: 1;
+    /* flip the notch to point upward */
+    clip-path: polygon(10px 0, calc(100% - 10px) 0, 100% 100%, 0 100%);
+    width: var(--notchWidth);
+    height: var(--notchHeight);
+    /* position it above the line */
+    bottom: calc(100% - var(--lineHeight));
+    /* box-shadow: 0 0 16px red, 0 0 16px red; */
+    left: -1px;
+
+    @media (--mediaUseMotion) {
+      transition-property: clip-path, opacity;
+    }
+
+    &[data-collapsed='true'] {
+      opacity: 0;
+      clip-path: polygon(10px 0, 10px 0, 0 100%, 0 100%);
+    }
+  }
+
+  .notch {
+    background: var(--glow);
+    position: absolute;
+    transition-property: opacity;
+    transition-duration: var(--durationL);
+    transition-timing-function: var(--bezierFastoutSlowin);
+    transition-delay: var(--collapseDelay);
+    opacity: 1;
+    clip-path: polygon(0 -1px, 100% -1px, calc(100% - 10px) 100%, 10px 100%);
+    width: var(--notchWidth);
+    height: var(--notchHeight);
+    top: var(--lineHeight);
+    /* box-shadow: 0 0 16px red, 0 0 16px red; */
+
+    @media (--mediaUseMotion) {
+      transition-property: clip-path, opacity;
+    }
+
+    &[data-collapsed='true'] {
+      opacity: 0;
+      clip-path: polygon(0 -1px, 0 -1px, 10px 100%, 10px 100%);
+    }
+  }
+}
