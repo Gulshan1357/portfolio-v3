@@ -50,5 +50,10 @@
     &[data-secondary='true'] {
       color: var(--textLight);
     }
+
+    &[data-highlight='true'] {
+      color: var(--gold);
+      background-color: color-mix(in lab, var(--gold) 20%, transparent);
+    }
   }
 }

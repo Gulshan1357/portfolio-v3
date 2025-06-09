@@ -9,6 +9,7 @@ export const Text = ({
   weight = 'auto',
   secondary,
   className,
+  highlight,
   ...rest
 }) => {
   return (
@@ -18,6 +19,7 @@ export const Text = ({
       data-size={size}
       data-weight={weight}
       data-secondary={secondary}
+      data-highlight={highlight}
       {...rest}
     >
       {children}

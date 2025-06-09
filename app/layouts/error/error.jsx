@@ -102,10 +102,10 @@ export function Error({ error }) {
                     iconHoverShift
                     className={styles.button}
                     data-visible={visible}
-                    href="https://www.youtube.com/watch?v=EuQzHGcsjlA"
+                    href="mailto:g.sankhyan1357@gmail.com"
                     icon="chevron-right"
                   >
-                    Emotional support
+                    Email me
                   </Button>
                 ) : (
                   <Button
