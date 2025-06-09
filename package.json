@@ -12,7 +12,7 @@
     "dev": "node ./scripts/dev.cjs && remix vite:dev",
     "start": "wrangler pages dev ./build/client",
     "postinstall": "node ./scripts/draco.cjs",
-    "deploy": "npm run build && wrangler pages deploy ./build/client --project-name portfolio"
+    "deploy": "npm run build && wrangler pages deploy ./build/client --project-name portfolio-v3"
   },
   "dependencies": {
     "@mdx-js/react": "^3.0.1",
