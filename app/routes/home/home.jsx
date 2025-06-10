@@ -8,6 +8,7 @@ import { baseMeta } from '~/utils/meta';
 import { Intro } from './intro';
 import { Profile } from './profile';
 import { ProjectSummary } from './project-summary';
+import { Button } from '~/components/button';
 import InteractibleParticles from './interactible-particles';
 import { useEffect, useRef, useState } from 'react';
 import config from '~/config.json';
@@ -95,6 +96,11 @@ export const Home = () => {
         sectionRef={intro}
         scrollIndicatorHidden={scrollIndicatorHidden}
       />
+      <Profile
+        sectionRef={details}
+        visible={visibleSections.includes(details.current)}
+        id="details"
+      />
       <ProjectSummary
         id="project-1"
         sectionRef={projectOne}
@@ -140,12 +146,11 @@ export const Home = () => {
           ],
         }}
       />
-
-      <Profile
-        sectionRef={details}
-        visible={visibleSections.includes(details.current)}
-        id="details"
-      />
+      <div className={styles.button}>
+        <Button secondary iconHoverShift href="/all-projects" iconEnd="arrow-right">
+          All Projects
+        </Button>
+      </div>
       <Footer />
     </div>
   );

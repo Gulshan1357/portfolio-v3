@@ -1,6 +1,5 @@
 import sparBackgroundPlaceholer from '~/assets/spar-background-placeholder.png';
 
-import wmHome from '~/assets/WM_home.png';
 import wmHomePlaceholder from '~/assets/WM_home-placeholder.png';
 import wmSimple from '~/assets/WM_Simple.png';
 import wmSimpleLow from '~/assets/WM_Simple2-360.png';
