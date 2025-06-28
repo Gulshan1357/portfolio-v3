@@ -143,19 +143,17 @@ export const Spar = () => {
                 feel more natural and engaging, I implemented additional enhancements
                 like:
               </ProjectSectionText>
-              <ProjectSectionText>
-                <List>
-                  <ListItem>Subtle body and hand movements</ListItem>
-                  <ListItem>
-                    Dynamic Facial Expressions and Body Language to signify emotions like
-                    Angry, Happy, Joy, Satisfied, etc.
-                  </ListItem>
-                  <ListItem>
-                    Multiple animation states like Idle, Listening and Talking expressed
-                    by animations like head-shake, nodding etc.
-                  </ListItem>
-                </List>
-              </ProjectSectionText>
+              <List>
+                <ListItem>Subtle body and hand movements</ListItem>
+                <ListItem>
+                  Dynamic Facial Expressions and Body Language to signify emotions like
+                  Angry, Happy, Joy, Satisfied, etc.
+                </ListItem>
+                <ListItem>
+                  Multiple animation states like Idle, Listening and Talking expressed by
+                  animations like head-shake, nodding etc.
+                </ListItem>
+              </List>
             </ProjectTextRow>
             <ProjectImage
               srcSet={`${spargifLow} 240w, ${spargif} 480w`}

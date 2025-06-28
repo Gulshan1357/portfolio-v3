@@ -73,14 +73,12 @@ export const WealthManagement = () => {
             <ProjectSectionHeading>Introduction</ProjectSectionHeading>
             <ProjectSectionText>
               According to Warren Buffett{' '}
-              <Text span highlight>
-                people should invest in what they know
-              </Text>
-              . This application embodies that principle. By leveraging this app, users
-              gain the ability to scan the objects in their surroundings using their phone
-              camera. This provides supplementary investment details, such as identifying
-              the specific RBC fund associated with that object. Furthermore, users can
-              gain insights into how these funds stack up against well-known index funds.
+              <Text highlight>people should invest in what they know</Text>. This
+              application embodies that principle. By leveraging this app, users gain the
+              ability to scan the objects in their surroundings using their phone camera.
+              This provides supplementary investment details, such as identifying the
+              specific RBC fund associated with that object. Furthermore, users can gain
+              insights into how these funds stack up against well-known index funds.
             </ProjectSectionText>
           </ProjectTextRow>
         </ProjectSection>
@@ -92,34 +90,24 @@ export const WealthManagement = () => {
               <ProjectSectionText>
                 In this project, I made three significant contributions:
               </ProjectSectionText>
-              <ProjectSectionText>
-                <List>
-                  <ListItem>
-                    <Text span highlight>
-                      Welcome Screen Animation
-                    </Text>
-                    : Building upon RBC's initial logo animation, I introduced my own
-                    animation that smoothly glided atop the existing logo. This animation
-                    was synchronized with the emergence of new text, creating a
-                    captivating visual transition.
-                  </ListItem>
-                  <ListItem>
-                    <Text span highlight>
-                      UI Design and Development
-                    </Text>
-                    : I designed and developed both the Simple and In-depth views for
-                    scanned objects in form of floating card in Unity.
-                  </ListItem>
-                  <ListItem>
-                    <Text span highlight>
-                      Graph Integration
-                    </Text>
-                    : Additionally, I integrated a data graph feature that facilitated a
-                    comparative analysis of RBC's funds' values against popular index
-                    funds.
-                  </ListItem>
-                </List>
-              </ProjectSectionText>
+              <List>
+                <ListItem>
+                  <Text highlight>Welcome Screen Animation</Text>: Building upon RBC's
+                  initial logo animation, I introduced my own animation that smoothly
+                  glided atop the existing logo. This animation was synchronized with the
+                  emergence of new text, creating a captivating visual transition.
+                </ListItem>
+                <ListItem>
+                  <Text highlight>UI Design and Development</Text>: I designed and
+                  developed both the Simple and In-depth views for scanned objects in form
+                  of floating card in Unity.
+                </ListItem>
+                <ListItem>
+                  <Text highlight>Graph Integration</Text>: Additionally, I integrated a
+                  data graph feature that facilitated a comparative analysis of RBC's
+                  funds' values against popular index funds.
+                </ListItem>
+              </List>
             </div>
             <div className={styles.sidebarImages}>
               <Image
