@@ -9,6 +9,9 @@ import portfolioV2Placeholder from '~/assets/portfolioV2-peek-placeholer.png';
 import lacrosseHigh from '~/assets/lacrosse-vr.png';
 import lacrosseLow from '~/assets/lacrosse-vr-320.png';
 import lacrossePlaceholder from '~/assets/lacrosse-vr-placeholer.png';
+import compGraHigh from '~/assets/ComputerGraphics.gif';
+import compGraLow from '~/assets/computerGraphics-320w.gif';
+import compGraPlaceholder from '~/assets/computerGraphics-placeholer.png';
 
 const projectsData = [
   {
@@ -60,6 +63,19 @@ const projectsData = [
     imageAlt:
       'The app can use the phone&apos;s camera to scan the nearby objects and displace the RBC fund associated with that object.',
     linkTo: '/projects/wealth-management',
+    postTag: 'Unity',
+    sideTag: 'C#',
+  },
+  {
+    title: 'Project for Computer Graphics and Animation Course',
+    dateTime: 'Late 2022 to Early 2023',
+    abstract: 'I utilized techniques like stencil buffers, logical cutoffs, world reflection, rim lightings, vertex shaders, fragment shaders etc.',
+    imageSrcSet: `${compGraHigh} 1532w, ${compGraLow} 320w`,
+    imagePlaceholder: `${compGraPlaceholder}`,
+    imageAlt:
+      'The Unity projects demonstrating the skills I aquired from Computer Graphics and Animation Course',
+    linkTo: 'https://vimeo.com/857297919',
+    linkText: 'Vimeo Link',
     postTag: 'Unity',
     sideTag: 'C#',
   },
