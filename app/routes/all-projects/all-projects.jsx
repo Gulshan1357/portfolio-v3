@@ -21,6 +21,10 @@ export const meta = () => {
   return baseMeta({ title, description });
 };
 
+function isExternalLink(href) {
+  return typeof href === 'string' && /^https?:\/\//.test(href);
+}
+
 function ProjectCard({
   title,
   dateTime,
@@ -29,6 +33,7 @@ function ProjectCard({
   imagePlaceholder,
   imageAlt,
   linkTo,
+  linkText = 'Read More',
   postTag = 'Featured',
   sideTag = '007', // default value
   onMouseEnter,
@@ -56,6 +61,7 @@ function ProjectCard({
         className={styles.postLink}
         onMouseEnter={onMouseEnter}
         onMouseLeave={onMouseLeave}
+        target={isExternalLink(linkTo) ? '_blank' : undefined}
       >
         <div className={styles.postDetails}>
           <div aria-hidden className={styles.postDate}>
@@ -70,7 +76,7 @@ function ProjectCard({
           </Text>
           <div className={styles.postFooter}>
             <Button secondary iconHoverShift icon="chevron-right" as="div">
-              Read article
+              {linkText}
             </Button>
           </div>
         </div>
@@ -121,6 +127,7 @@ export const AllProjects = () => {
                 imagePlaceholder={project.imagePlaceholder}
                 imageAlt={project.imageAlt}
                 linkTo={project.linkTo}
+                linkText={project.linkText}
                 postTag={project.postTag}
                 sideTag={project.sideTag}
                 onMouseEnter={handleMouseEnter}

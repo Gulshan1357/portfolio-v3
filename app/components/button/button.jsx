@@ -7,7 +7,7 @@ import { classes } from '~/utils/style';
 import styles from './button.module.css';
 
 function isExternalLink(href) {
-  return href?.includes('://');
+  return typeof href === 'string' && /^https?:\/\//.test(href);
 }
 
 export const Button = forwardRef(({ href, ...rest }, ref) => {
@@ -60,8 +60,8 @@ const ButtonContent = forwardRef(
         data-secondary={secondary}
         data-icon={icon}
         href={href}
-        rel={rel || isExternal ? 'noopener noreferrer' : undefined}
-        target={target || isExternal ? '_blank' : undefined}
+        rel={rel || (isExternal ? 'noopener noreferrer' : undefined)}
+        target={target || (isExternal ? '_blank' : undefined)}
         disabled={disabled}
         ref={ref}
         {...rest}
