@@ -6,7 +6,9 @@ import wmSimplePlaceholder from '~/assets/WM_Simple2-placeholder.png';
 import portfolioV2 from '~/assets/portfolioV2-peek.png';
 import portfolioV2Small from '~/assets/portfolioV2-peek-320.png';
 import portfolioV2Placeholder from '~/assets/portfolioV2-peek-placeholer.png';
-
+import lacrosseHigh from '~/assets/lacrosse-vr.png';
+import lacrosseLow from '~/assets/lacrosse-vr-320.png';
+import lacrossePlaceholder from '~/assets/lacrosse-vr-placeholer.png';
 
 const projectsData = [
   {
@@ -25,6 +27,31 @@ const projectsData = [
     sideTag: 'C++ & TypeScript',
   },
   {
+    title: 'Portfolio Website V2',
+    dateTime: 'Late 2023',
+    abstract: 'This project demonstrates my growing experties in React, SCSS and Javascript.',
+    imageSrcSet: `${portfolioV2} 927w, ${portfolioV2Small} 320w`,
+    imagePlaceholder: `${portfolioV2Placeholder}`,
+    imageAlt:
+      'The hero section of the portfolio website',
+    linkTo: 'https://github.com/Gulshan1357/gulshan-portfolio-v2',
+    linkText: 'GitHub Link',
+    postTag: 'Unity',
+    sideTag: 'C#',
+  },
+  {
+    title: 'Lacrosse VR',
+    dateTime: 'Early 2023',
+    abstract: 'I worked as a Unity developer for RBC to build an virtual reality lacrosse game for North American Indigenous Games 2023 (NAIG)',
+    imageSrcSet: `${lacrosseHigh} 1024w, ${lacrosseLow} 320w`,
+    imagePlaceholder: `${lacrossePlaceholder}`,
+    imageAlt:
+      'The Virtual Reality Lacrosse game targeting Meta Quest 2',
+    linkTo: '/',
+    postTag: 'Unity',
+    sideTag: 'C#',
+  },
+   {
     title: 'Wealth Management AR',
     dateTime: 'Late 2022 to Early 2023',
     abstract: 'Development for an Augmented Reality application built in Unity for RBC',
@@ -35,31 +62,6 @@ const projectsData = [
     linkTo: '/projects/wealth-management',
     postTag: 'Unity',
     sideTag: 'C#',
-  },
-  {
-    title: 'Portfolio Website V2',
-    dateTime: '2023',
-    abstract: 'This project demonstrates my growing experties in React, SCSS and Javascript.',
-    imageSrcSet: `${portfolioV2} 927w, ${portfolioV2Small} 320w`,
-    imagePlaceholder: `${portfolioV2Placeholder}`,
-    imageAlt:
-      'The unreal app with Metahuman is streamed to the web application using pixelstreaming',
-    linkTo: 'https://github.com/Gulshan1357/gulshan-portfolio-v2',
-    linkText: 'GitHub Link',
-    postTag: 'Unity',
-    sideTag: 'C#',
-  },
-  {
-    title: 'Test Streaming Metahuman Project 2',
-    dateTime: '2023-11-15',
-    abstract: 'This project demonstrates pixel streaming Unreal Metahuman to a web app.',
-    imageSrcSet: `${sparBackgroundMedium} 640w`,
-    imagePlaceholder: `${sparBackgroundPlaceholer}`,
-    imageAlt:
-      'The unreal app with Metahuman is streamed to the web application using pixelstreaming',
-    linkTo: '/',
-    postTag: 'Unreal',
-    sideTag: 'Blueprints',
   },
 ];
 
