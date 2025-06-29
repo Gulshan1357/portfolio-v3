@@ -39,15 +39,15 @@ const projectsData = [
   {
     title: 'Portfolio Website V2',
     dateTime: 'Late 2023',
-    abstract: 'This project demonstrates my growing expertise in React, SCSS and Javascript.',
+    abstract: 'I revamped my old portfolio website while using the project as an opportunity to solidify my SCSS skills.',
     imageSrcSet: `${portfolioV2} 927w, ${portfolioV2Small} 320w`,
     imagePlaceholder: `${portfolioV2Placeholder}`,
     imageAlt:
       'The hero section of the portfolio website',
     linkTo: 'https://github.com/Gulshan1357/gulshan-portfolio-v2',
     linkText: 'GitHub Link',
-    postTag: 'Unity',
-    sideTag: 'C#',
+    postTag: 'React',
+    sideTag: 'JavaScript & SCSS',
   },
     {
     title: 'Final Project for Computer Graphics and Animation Course (6CG3)',
