@@ -44,7 +44,13 @@ export const PredictiveTool = () => {
           placeholder={predictivePlaceholder}
           opacity={0.8}
         />
-        <ProjectHeader title={title} description={description} roles={roles} />
+        <ProjectHeader
+          title={title}
+          description={description}
+          roles={roles}
+          linkLabel="Project Poster"
+          url="https://drive.google.com/file/d/1QjLhfHbOvA5nUHDhm5pwMunySbWONzAx/view?usp=sharing"
+        />
 
         <ProjectSection>
           <ProjectTextRow>

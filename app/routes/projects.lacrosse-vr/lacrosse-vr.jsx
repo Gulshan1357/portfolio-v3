@@ -42,7 +42,13 @@ export const LacrosseVR = () => {
           placeholder={lacrossePlaceholder}
           opacity={0.8}
         />
-        <ProjectHeader title={title} description={description} roles={roles} />
+        <ProjectHeader
+          title={title}
+          description={description}
+          roles={roles}
+          linkLabel="LinkedIn Post by Design de Plume Inc."
+          url="https://www.linkedin.com/posts/design-de-plume_ddp-x-rbc-10th-north-american-indigenous-activity-7095403465618706433-unh_?utm_source=share&utm_medium=member_desktop"
+        />
 
         <ProjectSection>
           <ProjectTextRow>
@@ -95,14 +101,6 @@ export const LacrosseVR = () => {
               threshold. This dynamic interaction adds a layer of realism and engagement
               to the VR experience, enhancing the immersion of the lacrosse game.
             </ProjectSectionText>
-            <Button
-              secondary
-              iconHoverShift
-              href="https://www.linkedin.com/posts/design-de-plume_ddp-x-rbc-10th-north-american-indigenous-activity-7095403465618706433-unh_?utm_source=share&utm_medium=member_desktop"
-              iconEnd="link"
-            >
-              LinkedIn Post by Design de Plume Inc.
-            </Button>
           </ProjectTextRow>
         </ProjectSection>
       </ProjectContainer>
