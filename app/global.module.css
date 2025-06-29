@@ -35,8 +35,8 @@
   }
 
   :global(::selection) {
-    background: var(--accent);
-    color: var(--black);
+    background: var(--gold);
+    color: var(--white);
   }
 
   :global(:focus) {
