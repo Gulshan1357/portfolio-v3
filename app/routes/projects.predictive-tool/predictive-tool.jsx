@@ -21,7 +21,7 @@ import styles from './predictive-tool.module.css';
 import { Text } from '~/components/text';
 
 const title = 'Predictive Modelling Tool';
-const description = `I worked with St. Joseph's Healthcare Hamilton (SJHH) to enhance the discharge hourney of patients to Alternate Level of Care (ALC) through a Predictive Modelling Tool.`;
+const description = `I worked with St. Joseph's Healthcare Hamilton (SJHH) to enhance the discharge journey of patients to Alternate Level of Care (ALC) through a Predictive Modelling Tool.`;
 const roles = [
   'User Experience (UX) Design',
   'Human Centered Design',

@@ -65,7 +65,7 @@ export const FloorcanInsights = () => {
               the DECK.GL framework in combination with <Text highlight>React</Text>,
               enabling a comprehensive redesign. My primary responsibility involved
               conceiving the User Interface in <Text highlight>Figma</Text> and then
-              translating the finalized design into a fully functionaling Web application.
+              translating the finalized design into a fully functioning Web application.
             </ProjectSectionText>
           </ProjectTextRow>
         </ProjectSection>
@@ -91,22 +91,22 @@ export const FloorcanInsights = () => {
                   {
                     srcSet: `${floorcan1Low} 960w, ${floorcan1High} 1920w`,
                     sizes: `(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 1096px`,
-                    alt: 'A female character wearing the black coloured armor set.',
+                    alt: 'A floorcan insights web application with different filters.',
                   },
                   {
                     srcSet: `${floorcan2Low} 960w, ${floorcan2High} 1920w`,
                     sizes: `(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 1096px`,
-                    alt: 'A close up of the custom gauntlets design.',
+                    alt: 'A floorcan insights web application with different filters.',
                   },
                   {
                     srcSet: `${floorcan3Low} 960w, ${floorcan3High} 1920w`,
                     sizes: `(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 1096px`,
-                    alt: 'A female character wielding a sword and wearing the red coloured armor.',
+                    alt: 'A floorcan insights web application with different filters.',
                   },
                   {
                     srcSet: `${floorcan4Low} 960w, ${floorcan4High} 1920w`,
                     sizes: `(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 100vw, 1096px`,
-                    alt: 'A female character wielding a sword and wearing the red coloured armor.',
+                    alt: 'A floorcan insights web application with different filters.',
                   },
                 ]}
                 width={1920}

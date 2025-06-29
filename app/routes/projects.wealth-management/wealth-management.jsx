@@ -1,4 +1,4 @@
-import sparBackgroundPlaceholer from '~/assets/spar-background-placeholder.png';
+import sparBackgroundPlaceholder from '~/assets/spar-background-placeholder.png';
 
 import wmHomePlaceholder from '~/assets/WM_home-placeholder.png';
 import wmSimple from '~/assets/WM_Simple.png';
@@ -49,7 +49,7 @@ export const WealthManagement = () => {
           srcSet={`${wmSimple} 1920w`}
           width={1280}
           height={800}
-          placeholder={sparBackgroundPlaceholer}
+          placeholder={sparBackgroundPlaceholder}
           opacity={0.8}
         />
         <ProjectHeader title={title} description={description} roles={roles} />
@@ -61,7 +61,7 @@ export const WealthManagement = () => {
               srcSet={`${wmVideo} 1920w`}
               width={1920}
               height={1080}
-              placeholder={sparBackgroundPlaceholer}
+              placeholder={sparBackgroundPlaceholder}
               alt="A learning designer building and deploying an interactive lesson on volcanism using the app."
               sizes={`(max-width: ${media.mobile}px) 100vw, 50vw`}
             />

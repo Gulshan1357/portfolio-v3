@@ -1,7 +1,7 @@
 import sparBackground from '~/assets/spar-background.png';
 import sparBackgroundMedium from '~/assets/spar-background-1024w.png';
 import sparBackgroundLow from '~/assets/spar-background-320w.png';
-import sparBackgroundPlaceholer from '~/assets/spar-background-placeholder.png';
+import sparBackgroundPlaceholder from '~/assets/spar-background-placeholder.png';
 import spar1 from '~/assets/spar1.png';
 import spar1Medium from '~/assets/spar1-1024w.png';
 import spar1Low from '~/assets/spar1-320w.png';
@@ -10,9 +10,9 @@ import spar2 from '~/assets/spar2.png';
 import spar2Medium from '~/assets/spar2-1024w.png';
 import spar2Low from '~/assets/spar2-320w.png';
 import sparWon from '~/assets/spar-won.jpeg';
-import sparWonPlaceholer from '~/assets/spar-won-placeholder.jpeg';
-import spargif from '~/assets/spar-gif.gif';
-import spargifLow from '~/assets/spar-gif-240w.gif';
+import sparWonPlaceholder from '~/assets/spar-won-placeholder.jpeg';
+import sparGif from '~/assets/spar-gif.gif';
+import sparGifLow from '~/assets/spar-gif-240w.gif';
 
 import sparVideoIntro from '~/assets/spar-intro.mp4';
 import sparVideoPlaceholder from '~/assets/spar-video-placeholder.png';
@@ -39,7 +39,7 @@ import { baseMeta } from '~/utils/meta';
 import styles from './spar.module.css';
 
 const title = 'SPAR';
-const description = `I worked as an Unreal developer to build an AI-powered digital avatar using techonologies like Unreal's Metahuman and pixelstreaming`;
+const description = `I worked as an Unreal developer to build an AI-powered digital avatar using technologies like Unreal's Metahuman and pixelstreaming`;
 const roles = [
   'Unreal Engine Development',
   'Full Stack Web Development',
@@ -57,7 +57,7 @@ export const Spar = () => {
         <ProjectBackground
           src={sparBackgroundMedium}
           srcSet={`${sparBackgroundMedium} 1024w, ${sparBackground} 1920w`}
-          placeholder={sparBackgroundPlaceholer}
+          placeholder={sparBackgroundPlaceholder}
           opacity={0.8}
         />
         <ProjectHeader
@@ -127,7 +127,7 @@ export const Spar = () => {
               <Image
                 className={styles.sidebarImage}
                 srcSet={`${sparBackgroundLow} 320w, ${sparBackgroundMedium} 640w, ${sparBackground} 1920w`}
-                placeholder={sparBackgroundPlaceholer}
+                placeholder={sparBackgroundPlaceholder}
                 alt="The unreal app with Metahuman is streamed to the web application using pixelstreaming"
                 sizes={`(max-width: ${media.mobile}px) 200px, 343px`}
               />
@@ -139,9 +139,8 @@ export const Spar = () => {
             <ProjectTextRow>
               <ProjectSectionHeading>Improving the experience</ProjectSectionHeading>
               <ProjectSectionText>
-                Just animating the mouth wasn&apost enough. To make the Metahuman avatars
-                feel more natural and engaging, I implemented additional enhancements
-                like:
+                Just animating the mouth wasn't enough. To make the Metahuman avatars feel
+                more natural and engaging, I implemented additional enhancements like:
               </ProjectSectionText>
               <List>
                 <ListItem>Subtle body and hand movements</ListItem>
@@ -156,8 +155,8 @@ export const Spar = () => {
               </List>
             </ProjectTextRow>
             <ProjectImage
-              srcSet={`${spargifLow} 240w, ${spargif} 480w`}
-              placeholder={sparBackgroundPlaceholer}
+              srcSet={`${sparGifLow} 240w, ${sparGif} 480w`}
+              placeholder={sparBackgroundPlaceholder}
               alt="A Metahuman displaying different emotions."
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 90vw, 80vw`}
             />
@@ -189,7 +188,7 @@ export const Spar = () => {
             </ProjectTextRow>
             <ProjectImage
               srcSet={`${sparWon} 800w`}
-              placeholder={sparWonPlaceholer}
+              placeholder={sparWonPlaceholder}
               alt="The startup won 3rd place in  AI Everything 2025."
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 90vw, 80vw`}
             />
