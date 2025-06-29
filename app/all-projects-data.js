@@ -14,6 +14,10 @@ import lacrossePlaceholder from '~/assets/lacrosse-vr-placeholer.png';
 import compGraHigh from '~/assets/ComputerGraphics.gif';
 import compGraLow from '~/assets/computerGraphics-320w.gif';
 import compGraPlaceholder from '~/assets/computerGraphics-placeholer.png';
+import predictiveHigh from '~/assets/predictive.png';
+import predictiveLow from '~/assets/predictive-320.png';
+import predictivePlaceholder from '~/assets/predictive-placeholder.png';
+
 
 const projectsData = [
   {
@@ -58,7 +62,7 @@ const projectsData = [
    {
     title: 'Wealth Management AR',
     dateTime: 'Late 2022 to Early 2023',
-    abstract: 'Development for an Augmented Reality application built in Unity for RBC',
+    abstract: 'I developed an Augmented Reality application using Unity and C# for RBC',
     imageSrcSet: `${wmGifHigh} 2532w, ${wmGifLow} 320w`,
     imagePlaceholder: `${wmSimplePlaceholder}`,
     imageAlt:
@@ -68,9 +72,9 @@ const projectsData = [
     sideTag: 'C#',
   },
   {
-    title: 'Project for Computer Graphics and Animation Course',
+    title: 'Final Project for Computer Graphics and Animation Course (6CG3)',
     dateTime: 'Late 2022 to Early 2023',
-    abstract: 'I utilized techniques like stencil buffers, logical cutoffs, world reflection, rim lightings, vertex shaders, fragment shaders etc.',
+    abstract: 'For this project, I utilized techniques like stencil buffers, logical cutoffs, world reflection, rim lightings, vertex shaders, fragment shaders etc.',
     imageSrcSet: `${compGraHigh} 1532w, ${compGraLow} 320w`,
     imagePlaceholder: `${compGraPlaceholder}`,
     imageAlt:
@@ -79,6 +83,19 @@ const projectsData = [
     linkText: 'Vimeo Link',
     postTag: 'Unity',
     sideTag: 'C#',
+  },
+   {
+    title: 'Predictive Modelling Tool',
+    dateTime: 'January to August 2022',
+    abstract: 'I worked with St. Joseph\'s Healthcare Hamilton (SJHH) to enhance the discharge hourney of patients to Alternate Level of Care (ALC) through a Predictive Modelling Tool.',
+    imageSrcSet: `${predictiveHigh} 1918w, ${predictiveLow} 320w`,
+    imagePlaceholder: `${predictivePlaceholder}`,
+    imageAlt:
+      'The Unity projects demonstrating the skills I aquired from Computer Graphics and Animation Course',
+    linkTo: '/projects/predictive-tool',
+    linkText: 'Read More',
+    postTag: 'Design Thinking',
+    sideTag: 'UI/UX',
   },
 ];
 
