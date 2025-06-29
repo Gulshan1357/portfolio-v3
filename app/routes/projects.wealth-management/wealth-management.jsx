@@ -68,7 +68,7 @@ export const WealthManagement = () => {
           </ProjectSectionContent>
         </ProjectSection>
 
-        <ProjectSection>
+        <ProjectSection light>
           <ProjectTextRow>
             <ProjectSectionHeading>Introduction</ProjectSectionHeading>
             <ProjectSectionText>

@@ -66,7 +66,7 @@ export const PredictiveTool = () => {
           </ProjectTextRow>
         </ProjectSection>
 
-        <ProjectSection>
+        <ProjectSection light>
           <ProjectTextRow>
             <ProjectSectionHeading>Project Details</ProjectSectionHeading>
             <ProjectSectionText>

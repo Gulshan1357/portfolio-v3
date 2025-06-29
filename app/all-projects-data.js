@@ -83,7 +83,7 @@ const projectsData = [
     imagePlaceholder: `${lacrossePlaceholder}`,
     imageAlt:
       'The Virtual Reality Lacrosse game targeting Meta Quest 2',
-    linkTo: '/',
+    linkTo: '/projects/lacrosse-vr',
     postTag: 'Unity',
     sideTag: 'C#',
   },

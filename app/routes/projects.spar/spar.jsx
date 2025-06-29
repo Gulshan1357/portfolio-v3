@@ -15,6 +15,7 @@ import sparGif from '~/assets/spar-gif.gif';
 import sparGifLow from '~/assets/spar-gif-240w.gif';
 
 import sparVideoIntro from '~/assets/spar-intro.mp4';
+import sparVideoDemo from '~/assets/spar-demo.mp4';
 import sparVideoPlaceholder from '~/assets/spar-video-placeholder.png';
 
 import { Footer } from '~/components/footer';
@@ -162,7 +163,27 @@ export const Spar = () => {
             />
           </ProjectSectionContent>
         </ProjectSection>
-        <ProjectSection>
+        <ProjectSection padding="top">
+          <ProjectSectionContent>
+            <ProjectTextRow center noMargin>
+              <ProjectSectionHeading>Project in Action</ProjectSectionHeading>
+              <ProjectSectionText>
+                The AI still needs a bit of fine-tuning—it’s got more attitude than
+                accuracy—but the Unreal to Web pixel streaming, Metahuman switching at
+                runtime, and facial expressions are all working fine.
+              </ProjectSectionText>
+            </ProjectTextRow>
+            <ProjectImage
+              raised
+              className={styles.video}
+              srcSet={`${sparVideoDemo} 3840w`}
+              placeholder={sparVideoPlaceholder}
+              alt="A demonstration of spar in action.."
+              sizes={`(max-width: ${media.mobile}px) 100vw, 50vw`}
+            />
+          </ProjectSectionContent>
+        </ProjectSection>
+        <ProjectSection light>
           <ProjectSectionContent>
             <ProjectTextRow>
               <ProjectSectionHeading>Project outcomes</ProjectSectionHeading>
@@ -172,18 +193,19 @@ export const Spar = () => {
                 Inception incubation program.
               </ProjectSectionText>
               <ProjectSectionText>
-                To learn more about the project you can visit{' '}
+                To learn more about the project you can open up my article{' '}
+                <Link href="/articles/ai-powered-metahuman">here</Link> or at
                 <Link href="https://medium.com/@g.sankhyan1357/ai-powered-metahumans-using-ai-and-unreal-engine-5-to-create-realistic-characters-6c6aeb71c816">
                   {' '}
-                  my blog
+                  medium
                 </Link>
                 . You can also read the{' '}
                 <Link href="https://medium.com/@hobegi/spar-training-employees-with-ai-avatars-and-roleplays-e3a411b583ab">
                   {' '}
-                  medium article
+                  article
                 </Link>{' '}
-                by the founder
-                <Link href="https://www.linkedin.com/in/henryobegi/"> Henry Obegi</Link>.
+                by the founder{' '}
+                <Link href="https://www.linkedin.com/in/henryobegi/">Henry Obegi</Link>.
               </ProjectSectionText>
             </ProjectTextRow>
             <ProjectImage

@@ -70,7 +70,7 @@ export const FloorcanInsights = () => {
           </ProjectTextRow>
         </ProjectSection>
 
-        <ProjectSection>
+        <ProjectSection light>
           <ProjectTextRow>
             <ProjectSectionHeading>Project Details</ProjectSectionHeading>
             <ProjectSectionText>
