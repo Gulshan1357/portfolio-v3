@@ -43,7 +43,7 @@ import { baseMeta } from '~/utils/meta';
 import styles from './portfolio.module.css';
 import { Button } from '~/components/button';
 
-const title = 'Previous Portfolio Websites';
+const title = 'Portfolio Websites';
 const description = `The first version of my portfolio website was build using Webflow, second version using React and SCSS, and the third (and also current) version using React, Three.js and Framer Motion.`;
 const roles = [
   'Front-End Developer',
