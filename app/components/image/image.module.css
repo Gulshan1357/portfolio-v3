@@ -22,7 +22,7 @@
 
       &::before {
         content: '';
-        background-color: var(--accent);
+        background: var(--accent);
         position: absolute;
         inset: 0;
         transform: scale3d(0, 1, 1);
