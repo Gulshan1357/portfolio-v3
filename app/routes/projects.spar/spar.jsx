@@ -34,6 +34,7 @@ import {
   ProjectSectionText,
   ProjectTextRow,
 } from '~/layouts/project';
+import { Text } from '~/components/text';
 import { Fragment } from 'react';
 import { media } from '~/utils/style';
 import { baseMeta } from '~/utils/meta';
@@ -170,7 +171,8 @@ export const Spar = () => {
               <ProjectSectionText>
                 The AI still needs a bit of fine-tuning—it’s got more attitude than
                 accuracy—but the Unreal to Web pixel streaming, Metahuman switching at
-                runtime, and facial expressions are all working fine.
+                runtime, and facial expressions are all working fine. Hover over the video
+                and <Text highlight>Press Play</Text> to watch the it in action.
               </ProjectSectionText>
             </ProjectTextRow>
             <ProjectImage
@@ -210,6 +212,8 @@ export const Spar = () => {
             </ProjectTextRow>
             <ProjectImage
               srcSet={`${sparWon} 800w`}
+              width={800}
+              height={436}
               placeholder={sparWonPlaceholder}
               alt="The startup won 3rd place in  AI Everything 2025."
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 90vw, 80vw`}
