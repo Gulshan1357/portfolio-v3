@@ -20,13 +20,16 @@ import predictivePlaceholder from '~/assets/predictive-placeholder.png';
 import floorcan1High from '~/assets/floorcan1-1920w.png';
 import floorcan1Low from '~/assets/floorcan1-960w.png';
 import floorcanPlaceholder from '~/assets/floorcan-placeholder.png';
+import furnish3d from '~/assets/furnish3d.gif';
+import furnish3dLow from '~/assets/furnish3d-320.gif';
+import furnish3dPlaceholder from '~/assets/furnish3d-placeholder.gif';
 
 const projectsData = [
   {
     title: 'SPAR',
     dateTime: 'Dec 2023 to Jan 2025',
     abstract:
-      'Using LLM and Unreal Engine 5 to create an AI-driven virtual avatars which is streaming to a web app',
+      'Using LLM and Unreal Engine 5 to create an AI-driven virtual avatars. The Unreal app is hosted on cloud and streamed to a React web application',
     imageSrcSet: `${sparHigh} 480w, ${sparLow} 240w`,
     imagePlaceholder: `${sparBackgroundPlaceholder}`,
     imageAlt:
@@ -46,10 +49,23 @@ const projectsData = [
       'The hero section of the portfolio website',
     linkTo: '/projects/portfolio',
     linkText: 'Read More',
-    postTag: 'React',
+    postTag: 'React & Framer Motion',
     sideTag: 'JavaScript & SCSS',
   },
-    {
+  {
+    title: 'Furnish 3D',
+    dateTime: 'October 2024',
+    abstract: 'A quick project to get my hands dirty with React Three Fiber, Three.js, Next.js, and TypeScript. The goal? Build a simple app to display 3D models in a visualizer-style interface.',
+    imageSrcSet: `${furnish3dLow} 320w, ${furnish3d} 1039w`,
+    imagePlaceholder: `${furnish3dPlaceholder}`,
+    imageAlt:
+      'Inventory section displaying the 3D models of the items',
+    linkTo: 'https://furnish3d.vercel.app/',
+    linkText: 'Live Link',
+    postTag: 'React , Next.js & Three.js',
+    sideTag: 'TypeScript',
+  },
+  {
     title: 'Final Project for Computer Graphics and Animation Course (6CG3)',
     dateTime: 'July 2023',
     abstract: 'For this project, I utilized techniques like stencil buffers, logical cutoffs, world reflection, rim lightings, vertex shaders, fragment shaders etc.',
