@@ -149,6 +149,9 @@ const ImageElements = ({
       data-visible={inViewport || loaded}
       style={cssProps({ delay: numToMs(delay + 1000) })}
     >
+      {/* TODO: Fix the need to click twice to play video for first time */}
+      {/* {isVideo && !videoInteracted && <div>videoInteracted: false</div>} */}
+
       {isVideo && hasMounted && (
         <Fragment>
           <video
@@ -174,6 +177,7 @@ const ImageElements = ({
           )}
         </Fragment>
       )}
+
       {!isVideo && (
         <img
           className={styles.element}
