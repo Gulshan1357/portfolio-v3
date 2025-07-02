@@ -149,8 +149,8 @@ export const Portfolio = () => {
                 basically the design equivalent of saying “I watched Blade Runner once.”
               </ProjectSectionText>
               <ProjectSectionText>
-                It was a fun ride, but also the moment I started suspecting I might not
-                love the whole web design gig.
+                It was a fun ride. And I particularly enjoyed the process of converting
+                design documents to fully breathing websites.
               </ProjectSectionText>
               <div className={styles.buttons}>
                 <div className={styles.button}>
@@ -200,8 +200,8 @@ export const Portfolio = () => {
                 Version 3: Hoping it'll survive longer
               </ProjectSectionHeading>
               <ProjectSectionText>
-                Something about my last portfolio always felt off to me. I realised that
-                I’m just okay at web design and all my designs were fine. Just fine. To
+                Something about my last portfolio always felt off to me. I realized that
+                I’m just okay at web design, and all my designs were 'fine'. Just fine. To
                 elevate my portfolio I need a different approach.
               </ProjectSectionText>
               <ProjectSectionText>
@@ -213,7 +213,7 @@ export const Portfolio = () => {
               </ProjectSectionText>
               <ProjectSectionText>
                 So, in 2025, I shamelessly used his work as a foundation. It saved me
-                weeks. If you're reading this Hamish: you, my friend, are a legend.
+                weeks. Hamish, if you're reading this then you, my friend, are a legend.
               </ProjectSectionText>
               <div className={styles.buttons}>
                 <div className={styles.button}>
