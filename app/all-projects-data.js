@@ -23,14 +23,35 @@ import floorcanPlaceholder from '~/assets/floorcan-placeholder.png';
 import furnish3d from '~/assets/furnish3d.gif';
 import furnish3dLow from '~/assets/furnish3d-320.gif';
 import furnish3dPlaceholder from '~/assets/furnish3d-placeholder.gif';
+import bushido from '~/assets/bushido-low.gif';
+import bushidoPlaceholder from '~/assets/bushido-placeholder.png';
+import nexus from '~/assets/nexus.gif';
+import nexusPlaceholder from '~/assets/bushido-placeholder.png';
+import wipMed from '~/assets/work-in-progress-med.png';
+import wipLow from '~/assets/work-in-progress-low.png';
+import wipPlaceholder from '~/assets/work-in-progress-placeholder.png';
 
 const projectsData = [
+  {
+    title: 'Unreal + LLM Project',
+    dateTime: 'March 2025 to present',
+    abstract:
+      'Working on a kiosk experience using Unreal Engine and MetaHuman powered by AI. Built for GP Batteries, targeting clients in the Netherlands and Taiwan.',
+    imageSrcSet: `${wipLow} 640w, ${wipMed} 1280w`,
+    imagePlaceholder: `${wipPlaceholder}`,
+    imageAlt:
+      'The project is under construction',
+    linkTo: '/all-projects',
+    linkText: 'Link to all projects',
+    postTag: 'Unreal',
+    sideTag: 'Blueprints',
+  },
   {
     title: 'SPAR',
     dateTime: 'Dec 2023 to Jan 2025',
     abstract:
       'Using LLM and Unreal Engine 5 to create an AI-driven virtual avatars. The Unreal app is hosted on cloud and streamed to a React web application',
-    imageSrcSet: `${sparHigh} 480w, ${sparLow} 240w`,
+    imageSrcSet: `${sparLow} 240w, ${sparHigh} 480w`,
     imagePlaceholder: `${sparBackgroundPlaceholder}`,
     imageAlt:
       'The unreal app with Metahuman is streamed to the web application using pixelstreaming',
@@ -53,8 +74,21 @@ const projectsData = [
     sideTag: 'JavaScript & SCSS',
   },
   {
+    title: 'Nexus Game Engine',
+    dateTime: 'Nov 2024 - Jan 2025',
+    abstract: 'Built a C++ game engine from scratch with ECS, 2D physics, and impulse-based collisions. Used it to create a mini golf game for the Ubisoft NEXT 2025 programming challenge.',
+    imageSrcSet: `${nexus} 853w`,
+    imagePlaceholder: `${nexusPlaceholder}`,
+    imageAlt:
+      'Mini-golf game built using Nexus Game Engine',
+    linkTo: 'https://github.com/Gulshan1357/nexus-game-engine',
+    linkText: 'Github Link',
+    postTag: 'C++17',
+    sideTag: 'C++',
+  },
+  {
     title: 'Furnish 3D',
-    dateTime: 'October 2024',
+    dateTime: 'Oct 2024',
     abstract: 'A quick project to get my hands dirty with React Three Fiber, Three.js, Next.js, and TypeScript. The goal? Build a simple app to display 3D models in a visualizer-style interface.',
     imageSrcSet: `${furnish3dLow} 320w, ${furnish3d} 1039w`,
     imagePlaceholder: `${furnish3dPlaceholder}`,
@@ -64,6 +98,19 @@ const projectsData = [
     linkText: 'Live Link',
     postTag: 'React , Next.js & Three.js',
     sideTag: 'TypeScript',
+  },
+  {
+    title: 'Mixed Reality Swordsmanship Simulator',
+    dateTime: 'March - May 2024',
+    abstract: 'An Educational Samurai Swordsmanship Simulator experience, for Meta Quest Presence Platform Hackathon 2024.',
+    imageSrcSet: `${bushido} 320w`,
+    imagePlaceholder: `${bushidoPlaceholder}`,
+    imageAlt:
+      'A mixed reality app in action',
+    linkTo: 'https://devpost.com/software/inner-bushido-samurai-swordsmanship-simulator',
+    linkText: 'Devpost Link',
+    postTag: 'Unity, Next.js',
+    sideTag: 'C# & TypeScript',
   },
   {
     title: 'Final Project for Computer Graphics and Animation Course (6CG3)',
