@@ -7,6 +7,7 @@
   padding-bottom: 40px;
   display: flex;
   justify-content: center;
+  
 
   @media (--mediaTablet) {
     padding-top: 50px;
@@ -135,7 +136,7 @@
   }
   @media (--mediaUseMotion) {
     &:hover { /* Apply zoom effect directly to .project */
-      transform: scale(1.02); /* Zoom in by 2% on hover */
+      transform: scale(1.06); /* Zoom in by 2% on hover */
     }
   }
 }
