@@ -62,7 +62,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
                 secondary
                 className={styles.button}
                 data-visible={visible}
-                href={config.email}
+                href={`mailto:${config.email}`}
                 icon="send"
               >
                 Send me a message
